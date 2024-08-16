@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="backgroundColor">#172D21</color>
+  <color name="squareStrokeColor">#A8A387</color>
+  <color name="hashColor">#FCFCF6</color>
+  <color name="xColor">#A8A387</color>
+  <color name="questionMarkColor">#FF3CC7</color>
+</resources>

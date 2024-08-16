@@ -65,3 +65,14 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+task("generateIcons", type = Exec::class) {
+    dependsOn("mergeDebugResources")
+    inputs.file("src/main/res/values/iconpalette.xml")
+    inputs.dir("../scripts/IconCreator/Icon")
+    outputs.file("src/main/res/drawable/ic_launcher_background.xml")
+    outputs.file("src/main/res/drawable-v24/ic_launcher_foreground.xml")
+    project.exec {
+        commandLine = listOf("bash", "../scripts/IconCreator/Library/icon-creator.sh", "android", "../..", "../Icon")
+    }
+}
