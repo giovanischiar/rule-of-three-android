@@ -22,10 +22,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="io.schiar.ruleofthree" />
+                  <option name="mobileSdkAppId" value="1:405708378228:android:8a24a2ce53a1154d5c4121" />
+                  <option name="projectId" value="rule-of-3-wearos" />
+                  <option name="projectNumber" value="405708378228" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

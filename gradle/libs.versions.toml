@@ -1,17 +1,22 @@
 [versions]
 activityCompose = "1.9.1"
-activityComposeVersion = "1.8.2"
-activityVersion = "1.8.2"
-agp = "8.5.1"
+activityComposeVersion = "1.9.1"
+activityVersion = "1.9.1"
+agp = "8.5.2"
 composeVersion = "1.6.8"
-kotlin = "2.0.0"
-coreKtx = "1.10.1"
+hiltAndroidGradlePlugin = "2.50"
+hiltWork = "1.2.0"
+hiltCompiler = "1.2.0"
+kotlin = "2.0.10"
+coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-appcompat = "1.6.1"
-material = "1.10.0"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
 material3 = "1.2.1"
+roomVersion = "2.6.1"
+workRuntimeKtx = "2.9.1"
 
 [libraries]
 androidx-activity = { module = "androidx.activity:activity", version.ref = "activityVersion" }
@@ -22,12 +27,25 @@ androidx-animation-core = { module = "androidx.compose.animation:animation-core"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "composeVersion" }
 androidx-foundation-layout-android = { module = "androidx.compose.foundation:foundation-layout-android", version.ref = "composeVersion" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompiler" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltWork" }
+androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWork" }
 androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+androidx-room-common = { module = "androidx.room:room-common", version.ref = "roomVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
 androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "composeVersion" }
 androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "composeVersion" }
 androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics", version.ref = "composeVersion" }
 androidx-ui-text = { module = "androidx.compose.ui:ui-text", version.ref = "composeVersion" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "composeVersion" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "composeVersion" }
 androidx-ui-unit = { module = "androidx.compose.ui:ui-unit", version.ref = "composeVersion" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidGradlePlugin" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidGradlePlugin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
